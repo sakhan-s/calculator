@@ -1,38 +1,91 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Calculator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" charset="utf-8" defer></script>
+    <title>calculator</title>
 </head>
 
 <body>
-    <div class="calculator-grid">
-        <div class="output">
-            <div prev-number class="prev-number"></div>
-            <div cur-number class="cur-number"></div>
+    <main class="main">
+        <div class="calc">
+            <div class="calc-display">
+                <input disabled type="text" id="display" value="0" name="" placeholder="000000000000000000" class="calc-display-input">
+            </div>
+            <div class="calc-buttons">
+                <table class="calc-table">
+                    <tr class="calc-buttons-row">
+                        <td>
+                            <button type="button" class="clear-btn btn" id="ce">clear</button>
+                        </td>
+                        <td>
+                            <button type="button" class="clear-btn btn " id="c">del</button>
+                        </td>
+                        <td>
+                            <button type="button" class="operator btn ">/</button>
+                        </td>
+                        <td>
+                            <button type="button" class=" operator btn">*</button>
+                        </td>
+                    </tr>
+                    <tr class="calc-buttons-row">
+                        <td>
+                            <button type="button" class="number btn">7</button>
+                        </td>
+                        <td>
+                            <button type="button" class="number btn">8</button>
+                        </td>
+                        <td>
+                            <button type="button" class="number btn">9</button>
+                        </td>
+                        <td>
+                            <button type="button" class="operator btn">-</button>
+                        </td>
+                    </tr>
+                    <tr class="calc-buttons-row">
+                        <td>
+                            <button type="button" class="number btn">4</button>
+                        </td>
+                        <td>
+                            <button type="button" class="number btn">5</button>
+                        </td>
+                        <td>
+                            <button type="button" class="number btn">6</button>
+                        </td>
+                        <td>
+                            <button type="button" class="operator btn">+</button>
+                        </td>
+                    </tr>
+                    <tr class="calc-buttons-row">
+                        <td>
+                            <button type="button" class="number btn">1</button>
+                        </td>
+                        <td>
+                            <button type="button" class="number btn">2</button>
+                        </td>
+                        <td>
+                            <button type="button" class="number btn">3</button>
+                        </td>
+                        <td rowspan="1">
+                            <button type="button" class="operator btn " id="result">=</button>
+                        </td>
+                    </tr>
+                    <tr class="calc-buttons-row">
+                        <td colspan="1">
+                            <button type="button" class="number btn btn-long">0</button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn" id="decimal">.</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </div>
-        <button btn-all-clear class="span-one">DEL</button>
-        <button btn-delete>BSP</button>
-        <button btn-operation>÷</button>
-        <button btn-number>1</button>
-        <button btn-number>2</button>
-        <button btn-number>3</button>
-        <button btn-operation>*</button>
-        <button btn-number>4</button>
-        <button btn-number>5</button>
-        <button btn-number>6</button>
-        <button btn-operation>+</button>
-        <button btn-number>7</button>
-        <button btn-number>8</button>
-        <button btn-number>9</button>
-        <button btn-operation>-</button>
-        <button btn-number>.</button>
-        <button btn-number>0</button>
-        <button btn-equals class="span-two">=</button>
-    </div>
+    </main>
+    <script src="script.js">
+    </script>
 </body>
 
 </html>
