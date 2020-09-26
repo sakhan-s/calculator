@@ -15,14 +15,14 @@ body {
 
 .calc {
     max-width: 70%;
-    max-height: 710%;
-    padding-right: 100px;
-    margin-left: 100px;
+    max-height: 50%;
+    padding-right: 50px;
+    margin-left: 50px;
 }
 
 .calc-display-input {
     position: relative;
-    margin-left: 10%;
+    margin-left: 1em;
     margin-right: 19em;
     width: 110%;
     height: 80%;
@@ -36,9 +36,9 @@ body {
 
 .btn {
     display: flex;
-    justify-content: center;
-    padding: 60px;
-    font-size: 120%;
+    padding: 30px 60px 50px 30px;
+    margin-left: -3px;
+    font-size: 2em;
     color: yellow;
     background: black;
     border-radius: 40px;
@@ -52,4 +52,15 @@ body {
     display: flex;
     justify-content: space-evenly;
     width: 150%;
+}
+
+.btn-long {
+    width: 100%;
+    align-items: center;
+    padding-left: 10px;
+}
+
+#result {
+    height: 100%;
+    align-items: center;
 }
