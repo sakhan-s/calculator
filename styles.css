@@ -1,66 +1,81 @@
-*,
-*::before,
-*::after {
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    font-family: Gotham Rounded, sans-serif;
-    font-weight: normal;
-    user-select: none;
 }
 
 body {
-    width: 90%;
-    max-height: 50%;
-    padding: 10px;
-}
-
-.calc {
-    max-width: 70%;
-    max-height: 50%;
-    padding-right: 50px;
-    margin-left: 50px;
-}
-
-.calc-display-input {
-    position: relative;
-    margin-left: 1em;
-    margin-right: 19em;
-    width: 110%;
-    height: 80%;
-    margin-bottom: 15px;
-    border: none;
-    font-size: 30px;
-    outline: none;
-    grid-column: 1/-1;
-    padding: 15px;
-}
-
-.btn {
     display: flex;
-    padding: 30px 60px 50px 30px;
-    margin-left: -3px;
-    font-size: 2em;
-    color: yellow;
-    background: black;
-    border-radius: 40px;
-    -webkit-border-radius: 40px;
-    -moz-border-radius: 40px;
-    -ms-border-radius: 40px;
-    -o-border-radius: 40px;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 20px);
 }
 
-.calc-buttons {
-    display: flex;
-    justify-content: space-evenly;
-    width: 150%;
+input {
+    height: 100px;
+    margin-bottom: 2em;
+    max-width: 4.7em;
+    font-family: 'Bangers', cursive;
 }
 
-.btn-long {
+#display {
+    margin-left: -.3em;
+    font-size: 65px;
+    padding-left: 5px;
+}
+
+.wrapper {
+    max-width: 305px;
     width: 100%;
-    align-items: center;
-    padding-left: 10px;
+    border: 1px dotted black;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
-#result {
-    height: 100%;
-    align-items: center;
+.calculator {
+    padding: 10px;
+    background: black;
+    border: 8px solid yellow;
+}
+
+.operator-btn,
+.square-btn,
+.number-btn {
+    background: black;
+    color: red;
+    width: 55px;
+    font-family: 'Bangers', cursive;
+    height: 55px;
+    margin: 3px;
+    margin-left: 4px;
+    cursor: pointer;
+    font-size: 35px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.long {
+    width: 120px;
+}
+
+.tall {
+    height: 116px;
+    width: 55px;
+}
+
+.rr {
+    width: 195px;
+}
+
+.r {
+    display: flex;
+    height: 119px;
+    justify-content: center;
+    margin-left: -4px;
 }

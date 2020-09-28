@@ -1,5 +1,6 @@
-const numbers = document.querySelectorAll('.number');
-const operations = document.querySelectorAll('.operator');
+const numbers = document.querySelectorAll('.number-btn');
+const operations = document.querySelectorAll('.operator-btn');
+const square = document.getElementById('.square-btn');
 const clearBtns = document.querySelectorAll('.clear-btn');
 const decimalBtn = document.getElementById('decimal');
 const result = document.getElementById('result');
@@ -22,14 +23,13 @@ for (var i = 0; i < operations.length; i++) {
     });
 }
 
-for (var i = 0; i < clearBtns.length; i++) {
-    var clearBtn = clearBtns[i];
-    clearBtn.addEventListener('click', function(e) {
-        clear(e.target.textContent);
-    });
-}
+const deleteBtn = document.querySelector('.clear-btn[operator=clear-all]');
+deleteBtn.addEventListener('click', () => clear());
 
-decimalBtn.addEventListener('click', decimal);
+const clearBtn = document.querySelector('.clear-btn[operator=remove-symbol]');
+clearBtn.addEventListener('click', () => removeSymbol());
+
+decimalBtn.addEventListener('click', () => decimal());
 
 function numberPress(number) {
     if (MemoryNewNumber) {
@@ -67,7 +67,7 @@ function operationPress(op) {
     }
 }
 
-function decimal(argument) {
+function decimal() {
     let localDecimalMemory = display.value;
 
     if (MemoryNewNumber) {
@@ -81,14 +81,14 @@ function decimal(argument) {
     display.value = localDecimalMemory;
 }
 
-function clear(id) {
-    if (id === 'clear') {
-        display.value = '0';
-        MemoryNewNumber = true;
-    } else if (id === 'del') {
-        display.value = '0';
-        MemoryNewNumber = true;
-        MemoryCurrentNumber = 0;
-        MemoryPendingOperation = '';
-    }
+function clear() {
+    display.value = '0';
+    MemoryNewNumber = true;
+}
+
+function removeSymbol() {
+    display.value = display.value.slice(0, display.value.length - 1);
+    MemoryNewNumber = false;
+    MemoryCurrentNumber = 000000000000000000000000000000000;
+    MemoryPendingOperation = '';
 }
