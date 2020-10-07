@@ -93,5 +93,5 @@ function removeSymbol() {
     display.value = display.value.slice(0, display.value.length - 1);
     MemoryNewNumber = false;
     MemoryCurrentNumber = 0;
-    MemoryPendingOperation = '';
+    MemoryPendingOperation = '0';
 }
