@@ -59,6 +59,8 @@ function operationPress(op) {
             MemoryCurrentNumber *= +localOperationMemory;
         } else if (MemoryPendingOperation === '/') {
             MemoryCurrentNumber /= +localOperationMemory;
+        } else if (MemoryPendingOperation === '**') {
+            MemoryCurrentNumber **= +localOperationMemory;
         } else {
             MemoryCurrentNumber = +localOperationMemory;
         }
@@ -82,13 +84,13 @@ function decimal() {
 }
 
 function clear() {
-    display.value = '0';
+    display.value = '';
     MemoryNewNumber = true;
 }
 
 function removeSymbol() {
     display.value = display.value.slice(0, display.value.length - 1);
     MemoryNewNumber = false;
-    MemoryCurrentNumber = 000000000000000000000000000000000;
+    MemoryCurrentNumber = 0;
     MemoryPendingOperation = '';
 }
