@@ -8,7 +8,6 @@ const display = document.getElementById('display');
 let MemoryCurrentNumber = 0;
 let MemoryNewNumber = false;
 let MemoryPendingOperation = '';
-
 for (var i = 0; i < numbers.length; i++) {
     var number = numbers[i];
     number.addEventListener('click', function(e) {
@@ -59,8 +58,10 @@ function operationPress(op) {
             MemoryCurrentNumber *= +localOperationMemory;
         } else if (MemoryPendingOperation === '/') {
             MemoryCurrentNumber /= +localOperationMemory;
-        } else if (MemoryPendingOperation === '**') {
+        } else if (MemoryPendingOperation === 'pow') {
             MemoryCurrentNumber **= +localOperationMemory;
+        } else if (MemoryPendingOperation === 'sqr') {
+            MemoryCurrentNumber = Math.sqrt(localOperationMemory);
         } else {
             MemoryCurrentNumber = +localOperationMemory;
         }

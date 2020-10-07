@@ -23,31 +23,25 @@ input::placeholder {
 }
 
 #display {
-    font-size: 50px;
+    font-size: 51px;
     margin-bottom: 2em;
 }
 
 .buttons {
-    margin-left: 2em;
-}
-
-.wrapper {
-    max-width: 305px;
-    width: 100%;
-    border: 1px dotted black;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+    margin-left: 5%;
 }
 
 .calculator {
     padding: 10px;
     background: black;
     border: 8px solid yellow;
-    width: 25em;
+    width: 25.5em;
     height: 45em;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
 }
 
 .operator-btn,
@@ -55,10 +49,9 @@ input::placeholder {
 .number-btn {
     background: black;
     color: red;
-    width: 60px;
-    height: 65px;
+    width: 75px;
+    height: 75px;
     font-family: 'Bangers', cursive;
-    margin: 5px;
     margin-left: 5px;
     cursor: pointer;
     font-size: 35px;
@@ -70,21 +63,5 @@ input::placeholder {
 }
 
 .long {
-    width: 120px;
-}
-
-.tall {
-    height: 116px;
-    width: 55px;
-}
-
-.rr {
-    width: 195px;
-}
-
-.r {
-    display: flex;
-    height: 119px;
-    justify-content: center;
-    margin-left: -4px;
+    width: 4.5em;
 }
