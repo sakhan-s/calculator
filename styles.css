@@ -2,6 +2,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
 }
 
 body {
@@ -11,9 +15,8 @@ body {
 }
 
 .wrapper {
-    height: 500px;
-    width: 400px;
-    margin-top: 35px;
+    height: 550px;
+    margin-top: 10em;
 }
 
 input {
@@ -25,6 +28,7 @@ input {
 input::placeholder {
     color: grey;
     opacity: .4;
+    padding-left: .1em;
 }
 
 #display {
@@ -32,11 +36,15 @@ input::placeholder {
     margin-bottom: 1.5em;
 }
 
+.buttons {
+    margin-left: .8em;
+}
+
 .calculator {
     padding: 10px;
     background: black;
     border: 8px solid yellow;
-    width: 380px;
+    width: 395px;
     height: 600px;
     border-radius: 25px;
     -webkit-border-radius: 25px;
@@ -47,7 +55,8 @@ input::placeholder {
 
 .operator-btn,
 .square-btn,
-.number-btn {
+.number-btn,
+.decimal {
     background: black;
     color: red;
     width: 75px;

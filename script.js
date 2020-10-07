@@ -61,11 +61,9 @@ function operationPress(op) {
     } else if (MemoryPendingOperation === "/") {
       MemoryCurrentNumber /= +localOperationMemory;
     } else if (MemoryPendingOperation === "pow") {
-      MemoryCurrentNumber = MemoryCurrentNumber ** Number(localOperationMemory);
+      MemoryCurrentNumber = MemoryCurrentNumber ** (+localOperationMemory);
     } else if (MemoryPendingOperation === "sqr") {
-      MemoryCurrentNumber = Math.round(
-        MemoryCurrentNumber ** (1 / Number(localOperationMemory))
-      );
+      MemoryCurrentNumber = MemoryCurrentNumber ** (1 / (+localOperationMemory));
     } else {
       MemoryCurrentNumber = +localOperationMemory;
     }
@@ -77,7 +75,7 @@ function operationPress(op) {
 
 function decimal() {
     let localDecimalMemory = display.value;
-  
+
     if (MemoryNewNumber) {
       localDecimalMemory = '0.';
       MemoryNewNumber = false;
