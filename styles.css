@@ -15,8 +15,13 @@ body {
 }
 
 .wrapper {
+    position: flex;
+    justify-content: center;
+    align-items: center;
     height: 550px;
-    margin-top: 10em;
+    margin-top: 20%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 input {
@@ -34,17 +39,29 @@ input::placeholder {
 #display {
     font-size: 51px;
     margin-bottom: 1.5em;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Chrome/Safari/Opera */
+    -khtml-user-select: none;
+    /* Konqueror */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                  not supported by any browser */
 }
 
 .buttons {
     margin-left: .8em;
 }
-
 .calculator {
     padding: 10px;
     background: black;
     border: 8px solid yellow;
-    width: 395px;
+    width: 375px;
     height: 600px;
     border-radius: 25px;
     -webkit-border-radius: 25px;
@@ -59,10 +76,10 @@ input::placeholder {
 .decimal {
     background: black;
     color: red;
-    width: 75px;
+    width: 65px;
     height: 75px;
     font-family: 'Bangers', cursive;
-    margin-left: 5px;
+    margin-left: 10px;
     cursor: pointer;
     font-size: 35px;
     border-radius: 15px;
