@@ -88,7 +88,7 @@ function decimal() {
 }
 
 function clear() {
-    display.value = "0";
+    display.value = 0;
     MemoryNewNumber = true;
     MemoryCurrentNumber = 0;
     MemoryPendingOperation = "";

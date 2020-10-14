@@ -36,7 +36,7 @@ input::placeholder {
 }
 
 #display {
-    font-size: 49px;
+    font-size: 35px;
     margin-bottom: 1.5em;
     -webkit-touch-callout: none;
     /* iOS Safari */
@@ -54,7 +54,7 @@ input::placeholder {
 }
 
 .buttons {
-    margin-left: .8em;
+    margin-left: .5em;
 }
 .calculator {
     padding: 10px;
