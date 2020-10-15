@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 20px);
+}
+
+.wrapper {
+    position: flex;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    margin-top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input {
+    height: 100px;
+    width: 100%;
+    font-family: 'Bungee', cursive;
+}
+
+input::placeholder {
+    color: wheat;
+    opacity: .3;
+}
+
+#display {
+    font-size: 35px;
+    margin-bottom: 1.5em;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Chrome/Safari/Opera */
+    -khtml-user-select: none;
+    /* Konqueror */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+.buttons {
+    margin-left: .5em;
+}
+.calculator {
+    padding: 10px;
+    background: black;
+    border: 8px solid yellow;
+    width: 375px;
+    height: 600px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.operator-btn,
+.square-btn,
+.number-btn,
+.decimal {
+    background: black;
+    color: red;
+    width: 78px;
+    height: 75px;
+    font-family: 'Bungee', cursive;
+    cursor: pointer;
+    font-size: 30px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.long {
+    width: 4.5em;
+}
